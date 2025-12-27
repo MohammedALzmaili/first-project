@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+        <meta name="description" content="project for web lap"/>
+        <style>
+            body{
+                background-image :url("photos/Gemini_Generated_Image_6w2oco6w2oco6w2o.png") ;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 100vh;
+                margin: 0;
+            }
+            .container{
+                display: grid;
+                grid-template-columns:repeat(3, 1fr);
+                gap:20px;
+                justify-content: center;
+                padding: 20px;
+                box-sizing: border-box;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+            }
+            .card-link{
+                text-decoration: none;
+                color: #333;
+                display: block;
+                width: 90%;
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.2s, boxshadow 0.2s;
+                text-align: left;
+                background-color: black;
+            }
+            .card-link:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+                border-color: #bbb;
+            }
+            .card-link img {
+                width:100%;
+                height: 150px;
+                object-fit: cover;
+                display: block;
+            }
+            .card-link span {
+                display: block;
+                padding: 15px;
+                font-family:Arial, Helvetica, sans-serif;
+                background-color: #8C1F41;
+                border-top: 1px solid #eee;
+                font-size: large;
+                text-align: center;
+            }
+            .footer-marquee {
+            position: fixed;   
+            bottom: 0;        
+            left: 0;
+            width: 100%;      
+            background-color: rgba(0, 0, 0, 0.8); 
+            color: #ffcc00;   
+            padding: 8px 0;
+            z-index: 1000;    
+            font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;" >welcome to Jordan</h1>
+        <h2 style="text-align: center;">website about Jordan</h3><hr>
+        <h3><p style="font-family: 'Times New Roman', Times, serif;">Jordan, officially the <b>Hashemite Kingdom of Jordan</b>, is a country in the Southern Levant region of West Asia. 
+            Jordan is bordered by Syria to the north, Iraq to the east, Saudi Arabia to the south, and Palestine to the west. 
+            The Jordan River, flowing into the Dead Sea, is located along the country's western border within the Jordan Rift Valley. 
+            Jordan has a small coastline along the Red Sea in its southwest, separated by the Gulf of Aqaba from Egypt. 
+            Amman is the country's capital and largest city, as well as the most populous city in the Levant.</h3></p>
+        <div class="container">
+            <a href="governorate.html" target="_self" class="card-link">
+                <img src="photos/regions-of-jordan-map.png" alt="map of Jordan">
+                <span>governorates</span>
+            </a>
+            <a href="hisory.html" class="card-link" target="_self">
+                <img src="photos/about-jordan-people-culture.webp" alt="Temple of Artemis">
+                <span>History</span>
+            </a>
+            <a href="nature.html"  target="_self" class="card-link">
+                <img src="photos/main_image621362415d9a0.png" alt="Um AL-namel">
+                <span>Natural landscapes</span>
+            </a>
+            <!--<a href="" target="_self" class="card-link">
+                <img src="" alt="">
+                <span>Culture</span>
+            </a>
+            <a href="" target="_self" class="card-link">
+                <img src="" alt="">
+                <span>Population</span>
+            </a>
+            <a href="" target="_self" class="card-link">
+                <img src="" alt="">
+                <span>Information</span>-->
+            </a>
+        </div>
+        <marquee class="footer-marquee" bgcolor="#8c1e41">Contct us "junckmale@gmail.com"</marquee>
+
+    </body>
+</html>
